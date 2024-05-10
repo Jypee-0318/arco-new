@@ -1,0 +1,168 @@
+/* Style for the container div */
+body{
+    background-image:url(/src/app/assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: column;
+}
+
+/* Style for header section */
+header {
+    padding: 20px;
+    margin: auto; /* Reset margin */
+    font-family: "Poppins", sans-serif;
+    font-weight: 1000px;
+}
+
+/* Style for main content section */
+main {
+    padding: 20px;
+    text-align: center; /* Center text content within main */
+    margin: 0; /* Reset margin */
+}
+
+/* Style for image thumbnails */
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center thumbnails horizontally */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add margin-bottom */
+}
+
+.thumbnails img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 10px 10px 0; /* Adjust margin as needed */
+}
+
+/* Style for buttons */
+#cancel-btn {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 1000px;
+    background-color: whitesmoke; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 80px;
+    margin-top: 20px; /* Adjust margin as needed */
+    position: absolute;
+    display: flex;
+    margin-left: 110vh;
+    bottom: 20vh;
+    color: #4F4A45;
+    font-family: "Poppins", sans-serif;
+    font-weight: 1000px;
+    right: 139vh;
+}
+
+#create-btn{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 1000px;
+    background-color: #ED7D31;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 80px;
+    margin-top: 20px; /* Adjust margin as needed */
+    position: absolute;
+    display: flex;
+    margin-left: 98vh;
+    bottom: 20vh;
+    right: 152vh;
+}
+    
+
+#fileInputLabel{
+    position:fixed;
+    font-family: "Poppins", sans-serif;
+    font-weight: 1000px;
+    font-size: 20px;
+    background-color: whitesmoke;
+    color: #4F4A45;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    border-radius:30px;
+    margin-top: 20px;
+    bottom:68vh;
+    margin-left: -60vh;
+    padding-bottom: 15px;
+}
+
+.title h1{
+    position: absolute; 
+    display: flex;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 1000px;
+    color: #4F4A45;
+    font-size: 35px;
+    text-align: left;
+    padding-bottom: -1%;
+    margin-left: 37vh;
+    bottom: 70vh;
+}
+
+.title2 h2{
+    position:absolute;
+    display: flex;
+    text-align: left;
+    font-size: 35px;
+    bottom: 55vh;
+    color: #4F4A45;
+    font-family: "Poppins", sans-serif;
+    font-weight: 1000px;
+    margin-left: 40vh;
+    padding-bottom: 30px;
+}
+.imgUps {
+    max-width: 1080px;
+    border: 1px solid#4F4A45;
+    border-radius: 10%;
+    box-sizing: content-box;
+    height: 250px;
+    width: 200px;
+    padding: 5px;
+    top: 15%;
+    left: 20%; 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    position: absolute;
+    
+
+
+}
+
+.imgUps img {
+    max-width: 100%; /* Adjust this value to set the maximum width of the displayed images */
+    max-height: 100%; /* Adjust this value to set the maximum height of the displayed images */
+    object-fit: fill; /* Ensure the entire image fits within the grid cell */
+    border-radius: 10px; /* Optional: Add border radius to the images */
+    transition: opacity 1s ease; /* Add transition effect */
+}
+
+.imgUps img:hover {
+    opacity: 0.3;
+}
+
+/* Update the gap property to reduce vertical spacing between images */
+.imgUps.collage {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 columns in the grid */
+    gap: 10px; /* Reduce the gap size to make the vertical spaces smaller */
+}
+
+.imgUps.collage img {
+    width: 250%; /* Use the full width of the grid cell */
+    height: 200%; /* Maintain aspect ratio */
+    object-fit: grid; 
+}
